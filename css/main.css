@@ -116,8 +116,8 @@ h1 {
     font-weight: normal;
 }
 
-.block {
-    margin: 0 -20px;
+.catalogue {
+    margin: 0 auto;
 }
 
 .reset {
@@ -126,7 +126,6 @@ h1 {
 
 ul.dress {
     width: 100%;
-    margin: 0 auto;
 }
 
 .name {
@@ -145,13 +144,19 @@ img {
 	display: block;
 }
 
-h3 {
+.desc {
+    margin-top: 20px;
 	font-family: 'PT Sans', Arial, san-serif;
     font-size: 16px;
 	color: #000;
     text-align: center;
     font-weight: normal;
     text-transform: uppercase;
+}
+
+.price {
+    text-align: center;
+    margin-top: 10px;
 }
 
 .old {
@@ -175,7 +180,7 @@ h3 {
     margin: 0 auto;
 }
 
-h2 {
+.offer {
     width: 100px;
     margin: 0 auto;
     position: absolute;
@@ -183,13 +188,15 @@ h2 {
     top: 50%;
     transform: translate(-50%, -50%);
     color: #000;
+    font-size: 28px;
+    font-weight: bolder;
 }
 
 h2:hover {
      color: #1a7de0;
 }
 
-/*--------------Footer-------------*/
+/*--------------FOOTER-------------*/
 
 
 footer {
@@ -234,6 +241,10 @@ footer {
     width: 70%;
 }
 
+.down {
+    font-size: 0;
+}
+
 .footer_right {
     float: right;
     width: 30%;
@@ -243,7 +254,7 @@ footer {
 .menu_items {
     margin-right: 0;
     margin-bottom: 20px;
-    margin-right: 125px;
+    width: 33.33%;
 }
 
 ul {
@@ -254,6 +265,7 @@ ul {
 
 li {
     list-style-type: none;
+    font-size: 14px;
 }
 
 .contacts {
@@ -279,11 +291,13 @@ a:hover {
 }
 
 span {
-    text-decoration: underline;
+    text-decoration: none;
+    font-size: 14px;
 }
 
 .code {
-    text-transform: lowercase;
+    text-transform: capitalize;
+    text-decoration: underline;   
 }
 
 p {
@@ -292,19 +306,16 @@ p {
 }
 
 @media screen and (max-width: 1200px) {
-    .menu_items {
-     margin-right: 130px;
+     
 }
     
 }
 
 @media screen and (max-width: 992px) {
     
-    .menu_items {
-     margin-right: 80px;
-}
+  
     
-    .block {
+    .catalogue {
         margin: 0;
     }
     
@@ -342,9 +353,17 @@ p {
         height: 12px;
     }
     
-    .menu_items {
-        margin-right: 80px;
+    .name {
+        vertical-align: top;
 }
+    
+    .desc {
+        font-size: 16px;
+    }
+    
+    .price {
+        font-size: 16px;
+    }
     
     .footer_inner {
         font-size: 10px;
@@ -398,7 +417,7 @@ p {
     }
     
     
-    .block {
+    .catalogue {
         margin: 0 0 0 5px; 
     }
     
@@ -409,7 +428,8 @@ p {
     }
     
     .menu_items {
-     margin-right: 35px;
+    margin-right: 10px;
+    width: 30%;
 }
     
     .footer_btn {
@@ -433,25 +453,22 @@ p {
         width: 90%;
         margin: 0 20px;
     }
-    
-    h3 {
-        font-size: 14px;
-    }
-    
+
     .sale {
         width: 90%;
         margin: 0 auto 20px auto;
     }
     
-    h2 {
+    .price {
         font-size: 16px;
+        margin-bottom: 10px;
     }
     
     ul {
         display: block;
         margin-right: 0;
         font-size: 12px;
-}
+    }
     
     p {
         font-size: 12px;
@@ -460,13 +477,12 @@ p {
     .footer_btn {
         padding: 4px;
         font-size: 12px;
-}
+    }
     
     .menu_items {
+        width: 70%;
         margin-bottom: 0;
-}
-    
-}
+    }
 
     @media screen and (max-width: 320px) {
     
@@ -484,26 +500,21 @@ p {
         font-size: 14px;
     }
         
-    h3 {
-        font-size: 10px;
-    }
-        
-        
-    h2 {
-        font-size: 10px;
-        left: 162px;
-    }    
+    .offer {
+        font-size: 12px;
+        }    
         
     ul {
-        font-size: 8px;
+        font-size: 10px;
         }    
         
     p {
-        font-size: 8px;
+        width: 80%;
+        font-size: 10px;
     }
         
     .footer_btn {
         padding: 4px 2px 2px 2px;
         font-size: 8px;
-}
+    }
 }
