@@ -192,113 +192,6 @@ body {
     text-decoration: none;
 }
 
-/*-----------MEDIA-REQUESTS for FOOTER-----------*/
-
-/*@media screen and (min-width: 480px) { 
-    .header__topRight {
-        float: right;
-    }
-    .mailLink {
-        float: left;
-        margin-bottom: 0;
-    }
-}
-
-@media screen and (min-width: 768px) {
-    .toggleMobMenu {
-        display: none;
-    }
-    .logo {
-        position: static;
-        float: left;
-        margin-right: 17px;
-    }
-
-    .menuCont {
-        position: static;
-        float: left;
-        display: block;
-        padding: 0;
-        border-top: none;
-    }       
-
-    .menu__item {
-        display: inline-block;
-    }
-    .menu__item a {
-        font-size: 14px;
-        padding: 0 17px;
-    }
-    .header__form {
-        position: absolute;
-        right: 0;
-        top: 100%;
-    }
-
-    .header__form input[type="search"] {
-        border: none;
-        padding-right: 25px;
-        border-bottom: 1px solid #000;
-    }
-    .header__form button {
-        background: #000 url(../images/search.png);
-        border: none;
-        width: 23px;
-        height: 23px;
-        font-size: 0;
-        position: absolute;
-        bottom: 3px;
-        right: 0;
-    }
-    .header__formCont {
-        display: block;
-        float: right;
-    }
-    .searchIcon {
-        display: block;
-        width: 23px;
-        height: 23px;
-        margin-right: 16px;
-        background: url("../images/search.png");
-    }
-}
-
-@media screen and (min-width: 992px) {
-    .delivery {
-        float: left;
-        display: block;
-        margin-right: 55px;
-        margin-top: 0;
-        margin-bottom: 0;
-    }
-    .logo {
-        position: static;
-        float: left;
-    }   
-}
-
-@media screen and (min-width: 1200px) {
-    .delivery {
-        margin-right: 150px;
-    }
-    .header__formCont {
-        margin-right: 10px;
-    } 
-    .header__form {
-        display: block;
-        position: relative;
-    }
-    .header__form input[type="search"] {
-        border: block;
-        padding-right: 25px;
-        border-bottom: 1px solid #fff;
-        background-color: transparent;
-    }
-    .searchIcon {
-        display: none;
-    }
-}*/
-
 
 /*------------WRAPPER--------------*/
 
@@ -313,7 +206,6 @@ body {
 .slide {
     width: 100%;
     height: auto;  /*----добавил свойства для фото в слайдере---*/
-	display: block;
 }
 
 .slick-next {
@@ -393,7 +285,6 @@ section {
 .clothes {
     width: 100%;
     height: auto;
-	display: block;
 }
 
 .btn_new {
@@ -435,12 +326,6 @@ h1 {
 a h3:hover {
     color: #1a7de0;
 }
-
-/*img {
-    width: 100%;
-    height: auto;
-	display: block;
-}*/
 
 .desc {
     margin-top: 20px;
@@ -831,7 +716,6 @@ p {
         margin-bottom: 100px;
     }
     .sale {
-        width: 90%;
         margin: 0 auto 20px auto;
     }
     .desc {
@@ -856,11 +740,9 @@ p {
     }
     .footer_left {
         width: 50%;
-        padding: 0 25px;
     }
     .footer_right {
         width: 50%;
-        padding: 0 25px;
     }
     .menu_items {
         width: 100%;
@@ -875,9 +757,6 @@ p {
     .footer_btn {
         padding: 10px;
         font-size: 16px;
-    }
-    .studio {
-        left: 40px;
     }
 }
 
