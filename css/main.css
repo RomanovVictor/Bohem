@@ -35,7 +35,7 @@ body {
 /*--------------HEADER----------------*/
 
 .header {
-    
+    position: relative;
 }
 
 .header__top {
@@ -282,8 +282,8 @@ section {
     position: relative;
 }
 
-.clothes {
-    width: 100%;
+img {
+    max-width: 100%;
     height: auto;
 }
 
@@ -308,6 +308,7 @@ h1 {
 
 .reset {
     padding-left: 0;
+    padding-right: 0;
 }
 
 .dress {
@@ -315,12 +316,11 @@ h1 {
     font-size: 0;
 }
 
-.name {
+.thumbnail {
     display: inline-block;
     width: 33.333%;
     padding: 0 15px;
     font-size: 14px;
-    
 }
 
 a h3:hover {
@@ -357,6 +357,11 @@ a h3:hover {
     margin: 120px 0 50px 0;
 }
 
+.banner {
+    width: 100%;
+    height: auto;
+}
+
 .offer {
     width: 100px;
     margin: 0 auto;
@@ -385,10 +390,6 @@ footer {
     color: #fff;   
 }
 
-.container {
-    position: relative;
-}
-
 .container:after {  
 	content: "";
     display: table;
@@ -414,6 +415,7 @@ footer {
 
 .down {
     font-size: 0;
+    margin-bottom: 15px;
 }
 
 .footer_right {
@@ -424,7 +426,6 @@ footer {
 
 .menu_items {
     margin-right: 0;
-    margin-bottom: 20px;
     width: 33.33%;
 }
 
@@ -461,13 +462,6 @@ a:hover {
     font-size: 12px;
 }
 
-.studio {
-    position: absolute;
-    bottom: 0;
-    
-    
-}
-
 span {
     text-decoration: none;
     font-size: 14px;
@@ -483,7 +477,8 @@ p {
     margin-bottom: 0;
 }
 
-/*-----------MEDIA-REQUESTS for FOOTER-----------*/
+/*-----------MEDIA-QUERIES for FOOTER-----------*/
+
 
 @media screen and (min-width: 480px) { 
     .header__topRight {
@@ -524,9 +519,11 @@ p {
         position: absolute;
         right: 0;
         top: 100%;
+        z-index: 1;
     }
 
     .header__form input[type="search"] {
+        height: 24px;
         border: none;
         padding-right: 25px;
         border-bottom: 1px solid #000;
@@ -538,7 +535,7 @@ p {
         height: 23px;
         font-size: 0;
         position: absolute;
-        bottom: 3px;
+        bottom: 1px;
         right: 0;
     }
     .header__formCont {
@@ -578,6 +575,7 @@ p {
     .header__form {
         display: block;
         position: relative;
+        z-index: 0;
     }
     .header__form input[type="search"] {
         border: block;
@@ -591,7 +589,7 @@ p {
 }
 
 
-/*-----------------MEDIA_REQUESTS----------------*/
+/*-----------------MEDIA_QUERIES----------------*/
 
 @media screen and (max-width: 1200px) {
 }
@@ -605,6 +603,9 @@ p {
     .slick-prev {
         width: 40px;
         height: 40px;
+    }
+    .thumbnail {
+        padding: 15px;;
     }
     .sale {
         font-size: 20px;
@@ -672,25 +673,32 @@ p {
     .price {
         font-size: 14px;
     }
-    .name {
+    .thumbnail {
         vertical-align: top;
+        padding: 10px;
     }
     .btn_new {
         padding: 10px;
         margin-top: 30px
     }
     .footer_left {
-        width: 80%;
+        width: 70%;
     }
     .footer_right {
-        width: 20%;
+        width: 30%;
+    }
+    .menu_items {
+        display: block;
     }
     .footer_btn {
         padding: 5px;
-        font-size: 12px;
+        font-size: 16px;
     }
     li {
-        font-size: 12px;
+        font-size: 16px;
+    }
+    span {
+        font-size: 16px;
     }
 }
 
@@ -707,12 +715,12 @@ p {
     h1 {
         font-size: 22px;
     }
-    .name {
+    .thumbnail {
         display: block;
         margin: 0 auto;
-        width: 95%;
+        width: 80%;
     }
-    .name:nth-child(3) {
+    .thumbnail:nth-child(3) {
         margin-bottom: 100px;
     }
     .sale {
@@ -774,7 +782,7 @@ p {
     .price {
         font-size: 12px;
     }
-    .name:nth-child(3) {
+    .thumbnail:nth-child(3) {
         margin-bottom: 80px;
     }
     .btn_new {
